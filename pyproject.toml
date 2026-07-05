@@ -1,0 +1,30 @@
+[project]
+name = "form-hyperform"
+description = "Analytic integration package for FORM using hyperlogarithms"
+dependencies = ["form-bin"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+authors = [
+    {name = "A. Kardos"},
+    {name = "S.-O. Moch"},
+    {name = "O. Schnetz"}
+]
+maintainers = []
+classifiers = [
+  "Development Status :: 6 - Mature",
+  "Topic :: Scientific/Engineering :: Physics"
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/adamkardos/HyperFORM"
+Repository = "https://github.com/adamkardos/form-hyperform"
+Documentation = "https://arxiv.org/abs/2511.19992"
+
+[build-system]
+requires = ["setuptools>=79", "setuptools-scm[simple]>=9.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"form-packages.hyperform" = "HyperFORM"
